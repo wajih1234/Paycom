@@ -1,0 +1,337 @@
+.dashnav {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #2c3e50;
+  color: white;
+ 
+  position: relative; 
+  z-index: 1; 
+  width: 100%;
+}
+.dashbrand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.manip{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 5px;
+}
+
+.dashlinks{
+ display: flex;
+  gap: 0.5rem; 
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.dashlinks:hover{
+     background-color: #34495e;
+}
+.menu{
+   display: block;             /* block for sidebar */
+   width: 130px;
+   min-height: calc(100vh - 70px); /* adjust for navbar height if needed */
+   background-color: #f5f5f5;
+   margin-left: 0;
+   
+}
+ul{
+    
+     
+    list-style: none;
+    position: relative;
+    height: 100%;
+     padding: 0;
+     margin: 0;
+}
+ul li {
+  padding: 0;
+  margin: 0;
+}
+ul li p {
+  margin: 19 0;
+  padding: 0 10px;  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;         
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  
+}
+.tableofdata{
+  display: block;
+  
+  align-items: center;
+}
+
+
+.data {
+  flex: 0;
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start; 
+  gap: 20px;
+  padding: 20px;
+}
+
+/* 5. Box styling */
+.data .pay {
+  width: 600px;
+  height: 150px;
+  
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-grow: 0; /* Prevent stretching */
+}
+.pay2{
+   width: 600px;
+  height: 150px;
+  background-color:#2c3e50;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-grow: 0; 
+
+}
+
+/* Transactions Table Container */
+.transactions-table-container {
+  margin-top: 20px;
+  padding: 8px;
+  background-color: #fdfdfd;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  
+}
+
+/* Transactions Table */
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #fff;
+  
+}
+
+/* Table Headers */
+.transactions-table thead th {
+  background-color: #2c3e50;
+  color:#ccc;
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Table Rows */
+.transactions-table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.2s ease;
+}
+
+.transactions-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Table Cells */
+.transactions-table td {
+  padding: 10px 16px;
+  color: #444;
+}
+
+/* Status Styling */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.status.paid {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.unpaid {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Toggle Button */
+.transactions-toggle-btn {
+  margin-left: 10px;
+  
+  padding: 10px 18px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.transactions-toggle-btn:hover {
+  background-color: #357ab8;
+}
+
+.thebuutonssearch{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  gap: 20px;
+  
+ 
+}
+
+
+/* Bills Table Styles */
+.bills-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bills-table thead {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: left;
+}
+
+.bills-table th, 
+.bills-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bills-table tbody tr:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.bills-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.status {
+  
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  width: 80px;
+  
+}
+
+/* Status colors */
+.status.paid {
+  background-color: #27ae60;
+  color: white;
+  height: 10px;
+  
+}
+
+.status.unpaid {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Pay button style */
+.pay-button {
+  display: inline-block;
+  background-color: #2980b9;
+  color: white;
+  padding: 6px 12px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.pay-button:hover {
+  background-color: #3498db;
+}
+
+.suggestions-dropdown1 {
+  position: absolute;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 200px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.suggestion-item1 {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestion-item1:hover {
+  background-color: #f0f0f0;
+}
+.noun {
+
+  width: 100%;             /* Ensure it can expand fully */
+  border-radius: 7px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.noun:hover {
+  background-color: #dcdcdc; 
+}
+.po9{
+ text-decoration: none;
+  padding: 10px ; 
+  display: flex;
+  align-items: center;
+ 
+}
+.noun  {
+ 
+ padding: 10px ; 
+  display: flex;
+  align-items: center;
+}
+ .download-button {
+  display: inline-block;
+  background-color:#2c3e50 ;
+  color: white;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; 
+  text-align: center;
+}
+

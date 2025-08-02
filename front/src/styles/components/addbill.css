@@ -1,0 +1,153 @@
+.navadd {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  background-color: #2c3e50;
+  color: white;
+
+  position: relative; 
+  z-index: 1; 
+  width: 100%;
+}
+
+.addbrand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.alladd {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Takes at least full viewport height */
+}
+.nav-link1 {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+.nav-link2 {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+}
+
+.nav-link1:hover {
+  background-color:dimgray;
+}
+.nav-link2:hover {
+  background-color:dimgray;
+}
+
+
+.add-footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+.add-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-content a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.add-content a:hover {
+  text-decoration: underline;
+}
+
+
+/* Container for the form */
+.addbillf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+ width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.addbillf h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Input fields */
+.addbillf input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.addbillf input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Add button */
+.buttonadd {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buttonadd:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.buttonadd:active {
+  background-color: #004080;
+  transform: translateY(0);
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .addbillf {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}
+.addbillf select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+}

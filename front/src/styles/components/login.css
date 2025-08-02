@@ -1,0 +1,99 @@
+/* login.css */
+.OuterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background-color: #2c3e50; 
+  flex-direction: column;
+}
+
+.InnerContainer1 {
+background:white ;
+  height: 350px;
+  padding: 30px;
+  border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #e0e0e0; 
+}
+
+
+
+.emailInput1,
+.passwordInput1 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.buttonlog {
+  height: 50px;
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:  0.3s ease;
+}
+
+.buttonlog:hover {
+  background-color: cornflowerblue;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.emailInput1,
+.passwordInput1 {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; 
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.icon0 {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: gray;
+}
+.icon1{
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: gray;
+
+}
+.forgotPasswordButton{
+  background-color:beige;
+  border-radius: 25px;
+}
+
+
+
+

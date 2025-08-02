@@ -1,0 +1,78 @@
+.add-footer8 {
+  display: flex;
+   background-color: #2c3e50;
+  width: 100%;
+   margin-top: auto;
+   justify-content: center;
+}
+.forgetpay{
+  color: white;
+}
+.forget-content1{
+  justify-content: center;
+  color: white;
+}
+.forgetnav01{
+  
+ display: flex;
+  padding: 1rem 0rem;
+  
+ 
+  background-color: #2c3e50;
+ 
+
+  position: relative; 
+   margin-bottom: 1px;
+  width: 100%;
+
+}
+.forgetpay1{
+  color: white;
+   font-size: 1.5rem;
+  
+}
+.OuterContainer007 {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  min-height: 100vh;  
+  
+}
+.chartcontent2{
+   background-color: #e9edf1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+  align-items: center;     /* centers vertically */
+  gap: 5px;
+ width: 100%;      /* optional max width */
+ margin-top: 0px;
+ margin-left: 10px;
+     
+}
+.chart-wrapper {
+  width: 500px;               /* make charts bigger */
+  height: 590px;
+  
+}
+
+.chart-inner {
+  width: 100%;
+  height: 100%;
+  
+}
+.chartfooter{
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  width: 100%;
+}
+.chart-1{
+ margin-bottom: 240px;
+  width: 400px;
+}
+.chart-inner h4 {
+  margin: 60px 0 8px 0; /* or your preferred bottom spacing */
+}
