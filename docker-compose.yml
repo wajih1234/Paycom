@@ -1,0 +1,28 @@
+
+
+services:
+  mongodb:
+    image: mongo:6
+    container_name: paycom-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+  backend:
+    build: ./back
+    ports:
+      - "5000:5000"
+    container_name: paycom-back
+    env_file:
+      - ./back/.env.docker
+
+  frontend:
+    build: ./front
+    ports:
+      - "3000:80"
+    container_name: paycom-front
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:
