@@ -19,9 +19,16 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build and push Docker image
+      - name: Build and push BACKEND image
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./back
           push: true
-          tags: wajihand/paycom-app:latest
+          tags: wajih670/paycom-back:latest
+
+      - name: Build and push FRONTEND image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./front
+          push: true
+          tags: wajih670/paycom-front:latest
